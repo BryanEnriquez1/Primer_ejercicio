@@ -1,72 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#616060"
     tools:context=".FirstActivity">
 
     <EditText
         android:id="@+id/lbltexto"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
         android:layout_width="258dp"
         android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="433dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:inputType="text"
+        android:singleLine="true"
         android:text="BIENVENIDO AL CtOS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:visibility="visible" />
 
     <EditText
         android:id="@+id/lbltexto2"
         android:layout_width="258dp"
         android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="311dp"
         android:ems="10"
+        android:fontFamily="serif"
         android:inputType="text"
         android:text="ALEXANDER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbltexto"
-        app:layout_constraintVertical_bias="0.101" />
-
-    <TextView
-        android:id="@+id/lbltext3"
-        android:layout_width="113dp"
-        android:layout_height="47dp"
-        android:text="HOLA PERRO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic" />
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="122dp"
-        android:layout_height="64dp"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="218dp"
         android:text="FRIO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        android:textColor="#FAFAFA" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="624dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="59dp"
+        android:fontFamily="serif"
         android:text="ACEPTAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891" />
+        android:textStyle="bold"
+        app:backgroundTint="#776C6C" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="236dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="498dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</RelativeLayout>
