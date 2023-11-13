@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/user_10469982__1_" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnvalidar"
         android:layout_width="138dp"
         android:layout_height="55dp"
         android:layout_marginBottom="32dp"
