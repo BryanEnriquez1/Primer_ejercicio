@@ -28,10 +28,14 @@ public class Formulario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nombre=edNombres.getText().toString();
-                if(!nombre.isEmpty()){
+                String apellido=edApellidos.getText().toString();
+                String cedula=edCedula.getText().toString();
+                String telefono=edTelefono.getText().toString();
+                String direccion=edDireccion.getText().toString();
+                if(!nombre.isEmpty() && !apellido.isEmpty() && !cedula.isEmpty() && !telefono.isEmpty() && !direccion.isEmpty()){
                     Toast.makeText(Formulario.this,"SUBIENDO INFORMACION",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(Formulario.this,"INGRESE NOMBRE",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Formulario.this,"INGRESE DATOS",Toast.LENGTH_SHORT).show();
                 }
             }
         });
